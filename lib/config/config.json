@@ -48,14 +48,14 @@
         "criteria": [
           {
             "id": "3.1",
-            "description": "Did the agent pitch Smart Hire/Smart Hire Pro effectively? ",
+            "description": "Did the agent pitch Intelligent Hire/Intelligent Hire Pro effectively? ",
             "weight": "15%",
             "score": "<give assess % value>",
             "reason": "<give your reason>"
           },
           {
             "id": "3.2",
-            "description": "Did the agent advised customer about the benefits of the Smart Hire/Smart Hire Pro. ",
+            "description": "Did the agent advised customer about the benefits of the Intelligent Hire/Intelligent Hire Pro. ",
             "weight": "15%",
             "score": "<give assess % value>",
             "reason": "<give your reason>"
