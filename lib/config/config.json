@@ -1,0 +1,114 @@
+{
+  "prompt": "${transcript} \n based on above sales transcript, score the call quality, based criteria json below, replace placeholder value in “<…>” with your assessment score % (out ouf given weight %) and reason, and return response only in json format: ${JSON.stringify(criteriaJson)}",
+  "criteriaJson": {
+    "criteria": {
+      "call_opening": {
+        "id": "1",
+        "totalWeight": "10%",
+        "criteria": [
+          {
+            "id": "1.1",
+            "description": "Did the agent communicate introduction accurately?",
+            "weight": "5%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "1.2",
+            "description": "Did the agent ensure speaking to the decision maker for ad posting? ",
+            "weight": "5%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          }
+        ]
+      },
+      "probing_skills": {
+        "id": "2",
+        "totalWeight": "20%",
+        "criteria": [
+          {
+            "id": "2.1",
+            "description": "Did the agent ask questions to understand the customer preferred posting channel? ( Recruiter or LinkedIn)",
+            "weight": "10%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "2.2",
+            "description": "Did the agent ask questions to understand the current hiring needs? Including 'Rational Benefits' at least 1 before solutioning? ",
+            "weight": "10%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          }
+        ]
+      },
+      "providing_solutions": {
+        "id": "3",
+        "totalWeight": "30%",
+        "criteria": [
+          {
+            "id": "3.1",
+            "description": "Did the agent pitch Smart Hire/Smart Hire Pro effectively? ",
+            "weight": "15%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "3.2",
+            "description": "Did the agent advised customer about the benefits of the Smart Hire/Smart Hire Pro. ",
+            "weight": "15%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          }
+        ]
+      },
+      "objection_handling": {
+        "id": "4",
+        "totalWeight": "30%",
+        "criteria": [
+          {
+            "id": "4.1",
+            "description": "Did the agent acknowledged the identified objection?",
+            "weight": "10%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "4.2",
+            "description": "Did the agent ask clarifying questions to uncover the reason of objection?",
+            "weight": "10%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "4.3",
+            "description": "Did the agent attempt to overcome all objections by using provided recommended spiels to the customer?",
+            "weight": "10%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          }
+        ]
+      },
+      "call_closing": {
+        "id": "5",
+        "totalWeight": "10%",
+        "criteria": [
+          {
+            "id": "5.1",
+            "description": "Did the Agent recap the closing statement using the trial closing method?",
+            "weight": "5%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          },
+          {
+            "id": "5.2",
+            "description": "Did the Agent inform the customer that he/she will also send an email for reference?",
+            "weight": "5%",
+            "score": "<give assess % value>",
+            "reason": "<give your reason>"
+          }
+        ]
+      }
+    }
+  }
+}
